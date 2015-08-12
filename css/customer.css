@@ -1,0 +1,80 @@
+/*customer.css*/
+
+/*全局配色*/
+.background{
+	background: #fff;
+}
+.blue{
+	background: #34c4e6;
+}
+.yellow{
+	background: #f4a830;
+}
+.title{
+	color:#232323;
+}
+.text-gray{
+	color:#aaaaaa;
+}
+.wraper-bg{
+	background: #f9f9f9;
+}
+
+/*font-size*/
+.title{
+	font-size: 14px;
+}
+.info{
+	font-size: 13px;
+}
+
+/*图片圆角*/
+.img-circle{
+	border-radius: 50% 50%;
+}
+/*修正content会被footer遮盖*/
+.content-padding-50{
+	padding-bottom: 50px;
+}
+
+.box{
+	width:100%;
+	display: inline-block;
+	float: left;
+}
+
+/*box-padding*/
+.padding{
+	padding:10px;
+}
+/*box-margin*/
+.margin-top{
+	margin-top: 10px;
+}
+.margin-bottom{
+	margin-bottom: 10px;
+}
+/*标签*/
+.label{
+	border-radius: 4px;
+	padding:3px 6px;
+	color:#fff;
+	font-size: 12px;
+	margin-right: 5px;
+	display: inline-block;
+}
+/*分类标签*/
+.category > .label{
+	font-size: 14px;
+	padding:6px 12px;
+}
+/*边框颜色*/
+.border{
+	border:1px solid #ccc;
+}
+.border-top{
+	border-top:1px solid #ccc;
+}
+.border-bottom{
+	border-bottom:1px solid #ccc;
+}
