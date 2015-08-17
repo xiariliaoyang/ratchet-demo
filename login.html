@@ -11,13 +11,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- Include the compiled Ratchet CSS -->
     <link href="css/ratchet.css" rel="stylesheet">
+    <!--
     <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.css">
+    -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/customer.css">
     <!-- Include the compiled Ratchet JS -->
     <script src="js/ratchet.js"></script>
     <script type="text/javascript" src="js/touch-0.2.14.min.js"></script>
-    <script type="text/javascript" src="js/live.js"></script>
 </head>
 
 <body class="background">
@@ -26,22 +27,30 @@
         <h1 class="title">Titan</h1>
     </header>
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content content-padding-50 background">
-        <div class="segmented-control">
-            <a class="control-item active" href="#item1mobile">
-    Thing one
-  </a>
-            <a class="control-item" href="#item2mobile">
-        Thing two
-  </a>
-            <a class="control-item" href="#item3mobile">
-                Thing three
+    <div class="content content-padding-50 background-gray">
+        <div class="login-header">
+            <div class="segmented-control">
+                <a class="control-item active" href="#itemLogin">
+                登录
             </a>
+                <a class="control-item" href="#itemRegister">
+                注册
+            </a>
+            </div>
         </div>
-        <div class="card">
-            <span id="item1mobile" class="control-content active">Item 1</span>
-            <span id="item2mobile" class="control-content">Item 2</span>
-            <span id="item3mobile" class="control-content">Item 3</span>
+        <div>
+            <form class="input-group control-content active" id="itemLogin">
+                <input type="text" placeholder="您的手机号码">
+                <input type="password" placeholder="填写密码">
+                <button class="btn btn-positive btn-block">Choose existing</button>
+            </form>
+            <form class="input-group control-content" id="itemRegister">
+                <input type="text" placeholder="输入手机号">
+                <input type="email" placeholder="输入验证码">
+                <input type="password" placeholder="输入密码">
+                <input type="password" placeholder="重复密码">
+                <button class="btn btn-positive btn-block">Choose existing</button>
+            </form>
         </div>
     </div>
 </body>

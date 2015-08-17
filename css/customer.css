@@ -4,6 +4,9 @@
 .background{
 	background: #fff;
 }
+.background-gray{
+	background: #f9f9f9;
+}
 .blue{
 	background: #34c4e6;
 }
@@ -19,7 +22,10 @@
 .wraper-bg{
 	background: #f9f9f9;
 }
-
+/*表单内placeholder*/
+input::-webkit-input-placeholder{
+	color:#ccc;
+}
 /*font-size*/
 .title{
 	font-size: 14px;
@@ -168,4 +174,44 @@
 	float: left;
 	width:100%;
 	padding: 10px 0;
+}
+
+/*login-register*/
+
+.login-header{
+	padding:0 100px;
+	margin:20px 0 25px 0;
+}
+.login-header .segmented-control{
+	border:none;
+	background: none;
+}
+.login-header .segmented-control .control-item{
+	padding:10px 0 10px 0;
+	font-size: 14px;
+}
+.login-header .segmented-control .control-item:first-child{
+	border:1px solid #ccc;
+	border-right:none;
+	background-color: #fff;
+    border-radius: 10px 0px 0px 10px;
+}
+.login-header .segmented-control .control-item:last-child{
+	    border: 1px solid #ccc;
+    border-left: 1px solid #34c4e6;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0;
+}
+.login-header .segmented-control .control-item.active{
+	background: #fff;
+	border-color: #34c4e6;
+	color: #34c4e6;
+}
+#itemLogin,#itemRegister{
+	border-top:1px solid #cccccc;
+}
+#itemLogin input,#itemRegister input{
+	padding-left:10px;
+	padding-right:10px;
+	height:45px;
 }
