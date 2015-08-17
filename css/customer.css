@@ -70,11 +70,102 @@
 }
 /*边框颜色*/
 .border{
-	border:1px solid #ccc;
+	border:1px solid #E4E3E3;
 }
 .border-top{
-	border-top:1px solid #ccc;
+	border-top:1px solid #E4E3E3;
 }
 .border-bottom{
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #E4E3E3;
+}
+
+/*menu-bar*/
+.menu-bar{
+	background:#fff;
+}
+.customer-icon{
+	width:20px !important;
+	height:20px !important;
+	display: inline-block;
+	margin-right: 4px;
+	position: relative !important;
+    top: 3px !important;
+}
+.home-img{
+	background: url('../img/home.png');
+	background-position: 0,0;
+	background-size: cover;
+}
+.find-img{
+	background: url('../img/find.png');
+	background-position: 0,0;
+	background-size: cover;
+}
+.person-img{
+	background: url('../img/person.png');
+	background-position: 0,0;
+	background-size: cover;
+}
+.menu-bar .tab-item.active{
+	color:#34c4e6;
+}
+.menu-bar .tab-item.active > .customer-icon{
+	background-position: 19px 0;
+}
+
+/*category-search*/
+.category-search{
+	padding-top: 10px;
+}
+.category-box{
+	width:100%;
+	float: left;
+}
+.category-box .category-item{
+	width:25%;
+	float: left;
+	text-align: center;
+	
+}
+.category-box .category-item{
+	color:#092329;
+	font-size: 17px;
+	line-height: 24px;
+}
+.category-item-img{
+	display: inline-block;
+}
+.category-item-img img{
+	width:80%;
+}
+.category-box > .category-item.active{
+	color:#34c4e6;
+}
+.category-box > .category-item.active div{
+	text-align: center;
+	float: left;
+	width:100%;
+}
+.category-box > .category-item.active div span{
+	border-bottom: 2px solid #34c4e6;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+.search-box{
+	padding: 10px;
+	background: #f9f9f9;
+}
+.search-box input{
+	margin:0;
+}
+.search-box ::-webkit-input-placeholder{
+	color:#95d8e9;
+	text-align: center;
+}
+
+/*course*/
+.course-box{
+	float: left;
+	width:100%;
+	padding: 10px 0;
 }
